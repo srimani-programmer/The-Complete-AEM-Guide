@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: Cassandra Restaurant - All
+Content-Package-Roots: /apps/cassandra-packages,/apps/cassandra-vendor
+ -packages
+Implementation-Version: 0.0.1-SNAPSHOT
+Build-Jdk-Spec: 1.8
+Content-Package-Type: container
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Content-Package-Id: com.cassandra.restaurant:cassandra-restaurant.all:
+ 0.0.1-SNAPSHOT
+Content-Package-Description: All content package for Cassandra Restaur
+ ant
+

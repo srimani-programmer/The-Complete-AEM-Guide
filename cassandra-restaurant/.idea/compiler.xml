@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cassandra-restaurant.ui.config" />
+        <module name="cassandra-restaurant.ui.tests" />
+        <module name="cassandra-restaurant.ui.apps.structure" />
+        <module name="cassandra-restaurant.core" />
+        <module name="cassandra-restaurant.ui.apps" />
+        <module name="cassandra-restaurant.all" />
+        <module name="cassandra-restaurant.it.tests" />
+        <module name="cassandra-restaurant.ui.content" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

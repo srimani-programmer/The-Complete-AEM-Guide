@@ -1,0 +1,4 @@
+com\cassandra\restaurant\it\tests\GetPageIT.class
+com\cassandra\restaurant\it\tests\CreatePageIT.class
+com\cassandra\restaurant\it\tests\PublishPageValidationIT.class
+com\cassandra\restaurant\it\tests\HtmlUnitClient.class

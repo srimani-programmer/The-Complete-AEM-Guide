@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+Bundle-Category: Cassandra Restaurant
+Bundle-Description: Core bundle for Cassandra Restaurant
+Bundle-ManifestVersion: 2
+Bundle-Name: Cassandra Restaurant - Core
+Bundle-SymbolicName: cassandra-restaurant.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Export-Package: com.cassandra.restaurant.core.filters;version="1.0";us
+ es:="javax.servlet",com.cassandra.restaurant.core.listeners;version="
+ 1.0";uses:="org.apache.sling.api.resource.observation",com.cassandra.
+ restaurant.core.models;version="1.0";uses:="javax.annotation,org.apac
+ he.sling.api.resource,org.apache.sling.models.annotations,org.apache.
+ sling.models.annotations.injectorspecific",com.cassandra.restaurant.c
+ ore.schedulers;version="1.0",com.cassandra.restaurant.core.servlets;v
+ ersion="1.0";uses:="javax.servlet,org.apache.sling.api,org.apache.sli
+ ng.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.cassandra.restaur
+ ant.core.filters;version="[1.0,2)",com.cassandra.restaurant.core.list
+ eners;version="[1.0,2)",com.cassandra.restaurant.core.schedulers;vers
+ ion="[1.0,2)",com.day.cq.dam.api;version="[1.25,2)",com.day.cq.wcm.ap
+ i;version="[1.27,2)",com.google.gson;version="[2.8,3)",javax.servlet;
+ version="[3.1,4)",org.apache.sling.api;version="[2.3,3)",org.apache.s
+ ling.api.request;version="[2.4,3)",org.apache.sling.api.resource;vers
+ ion="[2.11,3)",org.apache.sling.api.resource.observation;version="[1.
+ 2,2)",org.apache.sling.api.servlets;version="[2.2,3)",org.apache.slin
+ g.models.annotations;version="[1.5,2)",org.apache.sling.models.annota
+ tions.injectorspecific;version="[1.1,2)",org.slf4j;version="[1.7,2)"
+Private-Package: com.cassandra.restaurant.core.beans
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.service;filter:="(objectClass=org.apache.slin
+ g.api.resource.ResourceResolverFactory)";effective:=active,osgi.exten
+ der;filter:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!(versi
+ on>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.cassandra.restaurant.core.filters.Logg
+ ingFilter.xml,OSGI-INF/com.cassandra.restaurant.core.listeners.Simple
+ ResourceListener.xml,OSGI-INF/com.cassandra.restaurant.core.scheduler
+ s.SimpleScheduledTask.xml,OSGI-INF/com.cassandra.restaurant.core.serv
+ lets.DAMFileReaderServlet.xml,OSGI-INF/com.cassandra.restaurant.core.
+ servlets.SimpleServlet.xml
+Sling-Model-Classes: com.cassandra.restaurant.core.models.HelloWorldMo
+ del
+
