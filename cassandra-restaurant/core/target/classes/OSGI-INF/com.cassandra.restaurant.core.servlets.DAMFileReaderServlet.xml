@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.cassandra.restaurant.core.servlets.DAMFileReaderServlet">
-  <property name="sling.servlet.paths" type="String">/bin/cassandra/filereader/content</property>
-  <service>
-    <provide interface="javax.servlet.Servlet"/>
-  </service>
-  <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resolverFactory"/>
-  <implementation class="com.cassandra.restaurant.core.servlets.DAMFileReaderServlet"/>
-</scr:component>

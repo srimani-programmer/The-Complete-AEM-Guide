@@ -1,7 +1,0 @@
-com\cassandra\restaurant\core\models\HelloWorldModelTest.class
-com\cassandra\restaurant\core\filters\LoggingFilterTest.class
-com\cassandra\restaurant\core\schedulers\SimpleScheduledTaskTest.class
-com\cassandra\restaurant\core\testcontext\AppAemContext.class
-com\cassandra\restaurant\core\listeners\SimpleResourceListenerTest.class
-com\cassandra\restaurant\core\servlets\SimpleServletTest.class
-com\cassandra\restaurant\core\testcontext\AppAemContext$1.class
