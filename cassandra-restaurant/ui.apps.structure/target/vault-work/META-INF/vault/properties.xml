@@ -4,7 +4,7 @@
 <comment>Cassandra Restaurant - Repository Structure Package</comment>
 <entry key="allowIndexDefinitions">false</entry>
 <entry key="name">cassandra-restaurant.ui.apps.structure</entry>
-<entry key="created">2022-05-17T19:28:42.289Z</entry>
+<entry key="created">2022-05-18T05:57:19.146Z</entry>
 <entry key="groupId">com.cassandra.restaurant</entry>
 <entry key="version">0.0.1-SNAPSHOT</entry>
 <entry key="packageType">mixed</entry>

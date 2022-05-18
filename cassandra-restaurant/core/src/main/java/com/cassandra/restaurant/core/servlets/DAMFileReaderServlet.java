@@ -1,13 +1,11 @@
 package com.cassandra.restaurant.core.servlets;
 
-import com.adobe.xfa.form.FormModel;
 import com.cassandra.restaurant.core.beans.DAMResourceData;
 import com.day.cq.dam.api.Asset;
 import com.day.cq.dam.api.Rendition;
 import com.google.gson.Gson;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
-import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
@@ -21,8 +19,6 @@ import org.slf4j.LoggerFactory;
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
 
 @Component(service = {Servlet.class})
 @SlingServletPaths("/bin/cassandra/filereader/content")
@@ -37,17 +33,9 @@ public class DAMFileReaderServlet extends SlingSafeMethodsServlet {
     @Override
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException {
 
-//        Map<String, Object> param = new HashMap<>();
-//        param.put(resolverFactory.SUBSERVICE, "adminSubService");
         ResourceResolver resourceResolver = null;
         BufferedReader reader = null;
         StringBuilder builder = null;
-
-//        try{
-//            resourceResolver = resolverFactory.getServiceResourceResolver(param);
-//        } catch (LoginException e) {
-//            LOG.info("Exception Occured While creating the Resource Resolver Object {}", e);
-//        }
 
         try {
             resourceResolver = request.getResourceResolver();
@@ -59,7 +47,7 @@ public class DAMFileReaderServlet extends SlingSafeMethodsServlet {
                 if (assetResource != null) {
                     Rendition fileRendition = assetResource.getOriginal();
                     if (fileRendition != null) {
-                        InputStream inputStream = fileRendition.adaptTo(InputStream.class);
+                        InputStream inputStream = fileRendition.getStream();
                         reader = new BufferedReader(new InputStreamReader(inputStream));
                         String fileContent;
                         builder = new StringBuilder();
@@ -67,7 +55,6 @@ public class DAMFileReaderServlet extends SlingSafeMethodsServlet {
                         while ((fileContent = reader.readLine()) != null) {
                             builder.append(fileContent);
                         }
-
                     }
                 }
             }

@@ -4,7 +4,7 @@
 <comment>Cassandra Restaurant - All</comment>
 <entry key="allowIndexDefinitions">false</entry>
 <entry key="name">cassandra-restaurant.all</entry>
-<entry key="created">2022-05-17T19:28:57.272Z</entry>
+<entry key="created">2022-05-18T05:57:37.326Z</entry>
 <entry key="groupId">com.cassandra.restaurant</entry>
 <entry key="version">0.0.1-SNAPSHOT</entry>
 <entry key="packageType">container</entry>

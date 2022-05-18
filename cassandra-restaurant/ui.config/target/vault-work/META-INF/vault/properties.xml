@@ -4,7 +4,7 @@
 <comment>Cassandra Restaurant - UI config</comment>
 <entry key="allowIndexDefinitions">false</entry>
 <entry key="name">cassandra-restaurant.ui.config</entry>
-<entry key="created">2022-05-17T19:28:56.951Z</entry>
+<entry key="created">2022-05-18T05:57:36.885Z</entry>
 <entry key="groupId">com.cassandra.restaurant</entry>
 <entry key="version">0.0.1-SNAPSHOT</entry>
 <entry key="packageType">container</entry>
