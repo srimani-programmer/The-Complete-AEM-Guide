@@ -1,1 +1,9 @@
-cassandra-restaurant/.idea/
+cassandra-restaurant/.idea/*
+cassandra-restaurant/core/target/*
+cassandra-restaurant/all/target/*
+cassandra-restaurant/ui.apps/target/*
+cassandra-restaurant/ui.apps.structure/target/*
+cassandra-restaurant/ui.content/target/*
+cassandra-restaurant/ui.config/target/*
+cassandra-restaurant/ui.tests/target/*
+cassandra-restaurant/it.tests/target/*
